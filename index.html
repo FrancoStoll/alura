@@ -28,7 +28,7 @@
         <div class="principal-container">
           <textarea
             name=""
-            id=""
+            id="textarea"
             cols="30"
             rows="10"
             placeholder="Ingrese el texto aquí"
@@ -46,12 +46,19 @@
       </div>
 
       <div class="resultado">
-        <div class="resultado-container">
+        <div class="resultado-info hidden" id="conInformacion">
+          <p id="informacion"></p>
+
+          <button id="copy">Copy</button>
+        </div>
+
+        <div class="resultado-container" id="sinInformacion">
           <img src="./img/Muñeco.png" alt="muñeco_imagen.jpg" />
           <h2>Ningún mensaje fue encontrado</h2>
           <p>Ingresa texto que desees encriptar o desencriptar</p>
         </div>
       </div>
     </main>
+    <script src="./js/index.js"></script>
   </body>
 </html>

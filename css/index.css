@@ -42,6 +42,7 @@ body {
   border: none;
   outline: none;
   text-align: left;
+  color: rgba(10, 56, 113, 1);
 }
 
 .principal textarea::placeholder {
@@ -80,13 +81,12 @@ body {
   line-height: 18px;
   text-align: left;
   color: rgba(73, 80, 87, 1);
-
 }
 .principal .button {
   /* Button */
   width: 328px;
   height: 67px;
-
+  cursor: pointer;
   /* Dark blue/dark-blue-300 */
   color: #fff;
   border-radius: 24px;
@@ -111,7 +111,7 @@ body {
   color: rgba(10, 56, 113, 1);
 }
 
-.resultado .resultado-container {
+ .resultado-container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -151,6 +151,41 @@ body {
   text-align: center;
 }
 
+.resultado-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.8rem;
+  justify-content: space-between;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  padding: 2.9rem;
+  
+}
+
+
+.resultado-info p {
+  text-align: left;
+  width: 100%;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+
+}
+.resultado-info button {
+  width: 336px;
+  height: 67px;
+  padding: 24px;
+  
+  border-radius: 24px;
+  color: rgba(10, 56, 113, 1);
+
+  border: 1px solid rgba(10, 56, 113, 1);
+  cursor: pointer;
+}
 /* 
 
   Responsive
@@ -198,4 +233,12 @@ body {
     margin: 0;
     width: 100%;
   }
+  .resultado-info button {
+    width: 100%;
+  }
+}
+
+
+.hidden {
+  display: none;
 }
